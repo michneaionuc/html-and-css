@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Survey</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Welcome to our survey</h1>
+  <p id="description">Thank you for taking you time to complete it!</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name <input id="name" name="name" type="text" placeholder="Enter your name"
+          required></label>
+      <label id="email-label">Email <input id="email" name="email" type="email" placeholder="Enter your Email"
+          required></label>
+      <label id="age-label">Age <input id="age" name="age" type="age" min=18 max=120 placeholder="Age" required></label>
+      <label for="dropdown">
+        How did you hear about us?
+        <select id="dropdown" name="dropdown">
+          <option value="">Choose one</option>
+          <option value="1">LinkedIn</option>
+          <option value="2">Facebook</option>
+          <option value="3">Other</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Would you recommend us?</legend>
+      <label for="yes"><input id="yes" value="yes" type="radio" name="recommendation" checked> Yes</label>
+      <label for="no"><input id="no" value="no" type="radio" name="recommendation"> No</label>
+    </fieldset>
+    <fieldset>
+      <legend>What would you like us to improve?</legend>
+      <label for="customer-service"><input id="customer-service" value="customer-service" type="checkbox"
+          name="improvements"> Customer Service</label>
+      <label for="selection-algorithm"><input id="selection-algorithm" value="selection-algorithm" type="checkbox"
+          name="improvements"> Selection Algorithm</label>
+    </fieldset>
+    <label for="comments">
+      Additional comments
+      <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+    </label>
+    <button id="submit" type="submit">Submit</buton>
+  </form>
+</body>
+
+</html>
